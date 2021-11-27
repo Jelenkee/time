@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schwäbisch Gmünd Uhrzeit</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AAkJCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiAAAAAAIRIREgAAAAISEREhIAAAIRERERESAAISERERESEgAhEREiERESACERESIhERIAIhESERIRIgAhESERESESACEhEREREhIAAhERERERIAAAISEREhIAAAACESERIAAAAAAiIiIAAAAAAAAAAAAAD//wAA+B8AAPAPAADgBwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAMADAADgBwAA8A8AAPgfAAD//wAA" rel="icon" type="image/x-icon" />
+    <style>
+        body {
+            margin: 0;
+        }
+
+        main {
+            background-color: #0E0E0E;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #uhr {
+            width: 85vmin;
+            height: 85vmin;
+            font-weight: bold;
+            color: #262626
+        }
+
+        table {
+            font-family: Helvetica, Arial, sans-serif;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            height: 100%;
+            table-layout: fixed;
+            font-size: calc(85vmin / 13);
+        }
+
+        td {
+            padding: 0px;
+        }
+
+        .active {
+            color: #B6B6D6
+        }
+    </style>
+    <script>
+        const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ";
+        function writeRandom() {
+            document.write(abc.charAt(Math.random() * abc.length));
+        }
+
+    </script>
+</head>
+
+
+<body>
+    <main>
+        <div id="uhr">
+            <table>
+                <tr>
+
+                    <td><span class="es">E</span></td>
+                    <td><span class="es">S</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="ist">I</span></td>
+                    <td><span class="ist">S</span></td>
+                    <td><span class="ist">T</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="fuenf_d">F</span></td>
+                    <td><span class="fuenf_d">Ü</span></td>
+                    <td><span class="fuenf_d">N</span></td>
+                    <td><span class="fuenf_d">F</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zehn_d">Z</span></td>
+                    <td><span class="zehn_d">E</span></td>
+                    <td><span class="zehn_d">H</span></td>
+                    <td><span class="zehn_d">N</span></td>
+                    <td><span class="zwanzig_d">Z</span></td>
+                    <td><span class="zwanzig_d">W</span></td>
+                    <td><span class="zwanzig_d">A</span></td>
+                    <td><span class="zwanzig_d">N</span></td>
+                    <td><span class="zwanzig_d">Z</span></td>
+                    <td><span class="zwanzig_d">I</span></td>
+                    <td><span class="zwanzig_d">G</span></td>
+                </tr>
+                <tr>
+                    <td><span class="drei_d">D</span></td>
+                    <td><span class="drei_d">R</span></td>
+                    <td><span class="drei_d">E</span></td>
+                    <td><span class="drei_d">I</span></td>
+                    <td><span class="viertel_d">V</span></td>
+                    <td><span class="viertel_d">I</span></td>
+                    <td><span class="viertel_d">E</span></td>
+                    <td><span class="viertel_d">R</span></td>
+                    <td><span class="viertel_d">T</span></td>
+                    <td><span class="viertel_d">E</span></td>
+                    <td><span class="viertel_d">L</span></td>
+                </tr>
+                <tr>
+                    <td><span class="vor">V</span></td>
+                    <td><span class="vor">O</span></td>
+                    <td><span class="vor">R</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="nach">N</span></td>
+                    <td><span class="nach">A</span></td>
+                    <td><span class="nach">C</span></td>
+                    <td><span class="nach">H</span></td>
+                </tr>
+                <tr>
+                    <td><span class="halb_d">H</span></td>
+                    <td><span class="halb_d">A</span></td>
+                    <td><span class="halb_d">L</span></td>
+                    <td><span class="halb_d">B</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="elf">E</span></td>
+                    <td><span class="elf">L</span></td>
+                    <td><span class="elf fuenf">F</span></td>
+                    <td><span class="fuenf">Ü</span></td>
+                    <td><span class="fuenf">N</span></td>
+                    <td><span class="fuenf">F</span></td>
+                </tr>
+                <tr>
+                    <td><span class="ein">E</span></td>
+                    <td><span class="ein">I</span></td>
+                    <td><span class="ein">N</span></td>
+                    <td><span class="eins">S</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="zwei">Z</span></td>
+                    <td><span class="zwei">W</span></td>
+                    <td><span class="zwei">E</span></td>
+                    <td><span class="zwei">I</span></td>
+                </tr>
+                <tr>
+                    <td><span class="drei">D</span></td>
+                    <td><span class="drei">R</span></td>
+                    <td><span class="drei">E</span></td>
+                    <td><span class="drei">I</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="vier">V</span></td>
+                    <td><span class="vier">I</span></td>
+                    <td><span class="vier">E</span></td>
+                    <td><span class="vier">R</span></td>
+                </tr>
+                <tr>
+                    <td><span class="sechs">S</span></td>
+                    <td><span class="sechs">E</span></td>
+                    <td><span class="sechs">C</span></td>
+                    <td><span class="sechs">H</span></td>
+                    <td><span class="sechs">S</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="acht">A</span></td>
+                    <td><span class="acht">C</span></td>
+                    <td><span class="acht">H</span></td>
+                    <td><span class="acht">T</span></td>
+                </tr>
+                <tr>
+                    <td><span class="sieben">S</span></td>
+                    <td><span class="sieben">I</span></td>
+                    <td><span class="sieben">E</span></td>
+                    <td><span class="sieben">B</span></td>
+                    <td><span class="sieben">E</span></td>
+                    <td><span class="sieben">N</span></td>
+                    <td><span class="zwoelf">Z</span></td>
+                    <td><span class="zwoelf">W</span></td>
+                    <td><span class="zwoelf">Ö</span></td>
+                    <td><span class="zwoelf">L</span></td>
+                    <td><span class="zwoelf">F</span></td>
+                </tr>
+                <tr>
+                    <td><span class="zehn">Z</span></td>
+                    <td><span class="zehn">E</span></td>
+                    <td><span class="zehn">H</span></td>
+                    <td><span class="zehn neun">N</span></td>
+                    <td><span class="neun">E</span></td>
+                    <td><span class="neun">U</span></td>
+                    <td><span class="neun">N</span></td>
+                    <td>
+                        <script>writeRandom();</script>
+                    </td>
+                    <td><span class="uhr">U</span></td>
+                    <td><span class="uhr">H</span></td>
+                    <td><span class="uhr">R</span></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+<script>
+
+    document.querySelector("body").onload = function () {
+        const spans = document.querySelectorAll("#uhr span");
+        function refreshTime() {
+            spans.forEach(s => s.classList.remove("active"));
+            const date = new Date();
+            const minutes = date.getMinutes();
+            const hours = date.getHours() % 12;
+
+            if (minutes >= 0 && minutes <= 3) {
+                activate("es");
+                activate("ist");
+                activate("uhr");
+                activateHour(false, true);
+            } else if (minutes >= 4 && minutes <= 6) {
+                activate("fuenf_d");
+                activate("nach");
+                activateHour(false, false);
+            } else if (minutes >= 7 && minutes <= 12) {
+                activate("zehn_d");
+                activate("nach");
+                activateHour(false, false);
+            } else if (minutes >= 13 && minutes <= 17) {
+                activate("es");
+                activate("ist");
+                activate("viertel_d");
+                activateHour(true, false);
+            } else if (minutes >= 18 && minutes <= 22) {
+                activate("zehn_d");
+                activate("vor");
+                activate("halb_d");
+                activateHour(true, false);
+            } else if (minutes >= 23 && minutes <= 27) {
+                activate("fuenf_d");
+                activate("vor");
+                activate("halb_d");
+                activateHour(true, false);
+            } else if (minutes >= 28 && minutes <= 32) {
+                activate("es");
+                activate("ist");
+                activate("halb_d");
+                activateHour(true, false);
+            } else if (minutes >= 33 && minutes <= 37) {
+                activate("fuenf_d");
+                activate("nach");
+                activate("halb_d");
+                activateHour(true, false);
+            } else if (minutes >= 38 && minutes <= 42) {
+                activate("zehn_d");
+                activate("nach");
+                activate("halb_d");
+                activateHour(true, false);
+            } else if (minutes >= 43 && minutes <= 47) {
+                activate("es");
+                activate("ist");
+                activate("drei_d");
+                activate("viertel_d");
+                activateHour(true, false);
+            } else if (minutes >= 48 && minutes <= 52) {
+                activate("zehn_d");
+                activate("vor");
+                activateHour(true, false);
+            } else if (minutes >= 53 && minutes <= 57) {
+                activate("fuenf_d");
+                activate("vor");
+                activateHour(true, false);
+            } else if (minutes >= 58 && minutes <= 59) {
+                activate("es");
+                activate("ist");
+                activate("uhr");
+                activateHour(true, true);
+            }
+
+            function activate(clas) {
+                document.querySelectorAll("." + clas).forEach(s => s.classList.add("active"));
+            }
+
+            function activateHour(next, at) {
+                switch (!next ? hours : (hours + 1) % 12) {
+                    case 0:
+                        activate("zwoelf")
+                        break;
+                    case 1:
+                        activate("ein")
+                        if (!at)
+                            activate("eins")
+                        break;
+                    case 2:
+                        activate("zwei")
+                        break;
+                    case 3:
+                        activate("drei")
+                        break;
+                    case 4:
+                        activate("vier")
+                        break;
+                    case 5:
+                        activate("fuenf")
+                        break;
+                    case 6:
+                        activate("sechs")
+                        break;
+                    case 7:
+                        activate("sieben")
+                        break;
+                    case 8:
+                        activate("acht")
+                        break;
+                    case 9:
+                        activate("neun")
+                        break;
+                    case 10:
+                        activate("zehn")
+                        break;
+                    case 11:
+                        activate("elf")
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+        };
+        setInterval(refreshTime, 1000);
+        refreshTime();
+    };
+</script>
+
+</html>
